@@ -1,0 +1,71 @@
+https://qiita.com/k-koh/items/eedc303cb0b72d1272ee
+QGCの使いかた
+
+明日やること　ー＞　https://jp.mathworks.com/help/uav/ug/mavlink-mission-and-parameter-protocol-simulink.html 
+                    - .plan fileがわからない。
+　　　　　　　　　　https://docs.qgroundcontrol.com/master/en/releases/stable_v3.2_long.html
+　　　　　　　　　　.plan fileのフォーマットについて
+
+１　radio teremetryを使用して、無線接続を行う。
+       - https://doodlelabs.com/wp-content/uploads/QGroundControl-and-Pixhawk-Advanced-Setup-v01020.pdf 　これでいけるかも明日解読する。
+       - わかったこと　無線接続のやり方　QGCの設定など
+　　　 - 通信エラーになる。　原因不明。　
+           parameter are missing from firmware. You may be running a version of firemware which is not fully supported or your firware has a bug in it. missing params 1:SYS_AUTOSTART 
+
+　－　rc.txtのstart simulink_appを消す。それでfirmware uploadを行う。
+
+       - 特に変化なし 
+
+　－　そこからsimulinkのmavlinkの有効化を行う。
+
+　　　 - OK
+　　　https://jp.mathworks.com/help/supportpkg/px4/ug/enable-mavlink-px4.html
+
+　－　mavlink consoleを使用する。
+
+　　　　－　使いかたがいまいちわからない。mavlink consoleをなぜ使用するのかを理解するべき。
+　　　https://jp.mathworks.com/help/supportpkg/px4/ug/impact-disabling-px4.html
+
+2/15日
+
+https://jp.mathworks.com/help/uav/mavlink-support.html　これの確認。
+
+2/23日
+QGCの使いかた
+https://docs.qgroundcontrol.com/master/en/SettingsView/General.html
+無線接続できない会話
+https://github.com/mavlink/qgroundcontrol/issues/863
+
+成果として
+rc.txtを消すと、QGCでfirmwareの更新ができ、無線接続がうまくいく、だがまだデータの取得がうまくできていない。USBだとうまく取得できる。
+
+3/3
+
+https://blog.csdn.net/KLKill/article/details/107966100
+中国語で書いてあり、matlabとsimulinkについて何かヒントあり.
+
+http://flyeval.com/doc/RflySim%E9%AB%98%E7%BA%A7%E7%89%88_%E7%AC%AC03%E8%AE%B2_%E5%8D%95%E6%9C%BA%E6%8E%A7%E5%88%B6%E6%8E%A5%E5%8F%A3%E5%AE%9E%E7%8E%B0.pdf
+かなり良い資料かもしれない（とくにない）
+
+https://jp.mathworks.com/help/uav/ug/mavlink-mission-and-parameter-protocol-simulink.html
+matlabとQGCの通信について
+https://github.com/mavlink/qgroundcontrol/issues/4228
+https://docs.qgroundcontrol.com/master/en/SettingsView/General.html
+UDPについて
+3/9
+無線通信でセンサデータをQGCで表示することができるか？
+analistで行けるらしい。
+ウィジェット-> QGroundControlで分析しているらしい。
+
+アプリ
+# 企業からエントリーがくるアプリ。
+ラボベース
+オファベース
+
+投資家情報を見れば企業の情報が分かる。
+
+
+
+
+
+
